@@ -1,0 +1,9 @@
+Flask
+flask-restx
+SQLAlchemy
+pyodbc
+python-dotenv
+pydantic
+flask_sqlalchemy
+azure-identity
+flask_migrate
