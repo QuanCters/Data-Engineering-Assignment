@@ -46,9 +46,11 @@ def create_app():
     api.init_app(app)
 
     with app.app_context():
-        from app.routes import caregiver_ns
+        from app.routes import caregiver_ns,admissions_ns, patients_ns, prescriptions_ns
         api.add_namespace(caregiver_ns, path='/caregivers')
-    
+        api.add_namespace(admissions_ns, path='/admissions')
+        api.add_namespace(patients_ns, path="/patients")
+        api.add_namespace(prescriptions_ns, path="/prescriptions")
 
     return app  
 
